@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(222, 254, 255);
+    font-family: "young"
+}
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@font-face {
+    font-family: "young";
+    src: url(../letra/YoungSerif-Regular.ttf);
+}
+.caja {
+    background-color: transparent;
+    width: 1349px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+.logotipo {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: row wrap;
+    gap: 1rem;
+    text-align: center;
+    top: 50px;
+    justify-content: space-between;
+    
+}
+.menu {
+    text-decoration: none;
+    color: rgb(45, 46, 46);
+    
+}
+.collage {
+    width: 1349px;
+    height: 560px;
+}
+.bienve {
+    text-align: center;
+    font-family: "young";
+
+}
+.bienvenidos {
+    font-family: "young";
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.masajes {
+    display: flex;
+}
+.masaje {
+
+    vertical-align:middle;
+    width: 500px;
+    height: 200px;
+    margin-left: 1rem;
+}
+.textomasaje {
+    margin-left: 10px ;
+    margin-right: 10px;
+}
+.facial {
+    width: 500px;
+    height: 200px;
+}
+.textofacial {
+    margin-left: 10px;
+    margin-right: 1rem;
+}
+.manicure {
+    vertical-align:middle;
+    width: 350px;
+    height: 200px;
+    margin-left: 1rem;
+}
+.manicures {
+    display: flex;
+    margin-top: 1rem;
+}
+.textomanicure {
+    margin-left: 10px;
+    margin-right: 1rem;
+}
+.imagencontacto {
+    margin-left: 1rem;
+    width: 749px;
+    height: 300px;
+}
+.mapa {
+    margin-left: 20px;
+    width: 549px;
+    height: 300px;
+}
+.contacto-datos {
+    font-family: "young";
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.img-reserva {
+    width:400px;
+    height: 513px;
+}
+.calendar {
+    height: 150px;
+    width: 150px;
+}
+.reserva {
+    display: flex;
+}
+.imagenpromo1 {
+    margin-left: 1rem;
+    height: 200px;
+    width: 200px;
+}
+.imgpromo1 {
+    display: flex;
+}
+.textopromo1 {
+    margin-left: 10px;
+    margin-right: 30px;
+}
+.precio1 {
+    margin-left: 2rem;
+    margin-right: 6rem;
+}
+.promo2 {
+    display:flex;
+}
+.imgpromo2 {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    height: 200px;
+    width: 200px;
+}
+.textopromo2 {
+    margin-left: 10px;
+    margin-right: 30px;
+}
+.precio2 {
+    margin-left: 2rem;
+    margin-right: 6rem;
+}
