@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: rgb(222, 254, 255);
+    background-color: rgb(255, 255, 255);
     font-family: "young"
 }
 @import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
@@ -25,13 +25,9 @@
     
 }
 .nav {
-    flex-direction: row;
-    flex-wrap: wrap;
-    flex-grow: row wrap;
-    gap: 1rem;
-    text-align: center;
-    top: 50px;
-    justify-content: space-between;
+  background-color: transparent;
+  border-color: transparent;
+
     
 }
 .menu {
@@ -153,4 +149,8 @@
 .precio2 {
     margin-left: 2rem;
     margin-right: 6rem;
+}
+.logobar {
+    width: 20vh;
+  
 }
