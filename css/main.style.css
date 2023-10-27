@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(152, 255, 226);
     font-family: "young"
 }
 @import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
@@ -10,6 +10,7 @@
     font-family: "young";
     src: url(../letra/YoungSerif-Regular.ttf);
 }
+
 .caja {
     background-color: transparent;
     width: 1349px;
@@ -51,42 +52,6 @@
     margin-top: 1rem;
     margin-bottom: 1rem;
     text-align: center;
-}
-.masajes {
-    display: flex;
-}
-.masaje {
-
-    vertical-align:middle;
-    width: 500px;
-    height: 200px;
-    margin-left: 1rem;
-}
-.textomasaje {
-    margin-left: 10px ;
-    margin-right: 10px;
-}
-.facial {
-    width: 500px;
-    height: 200px;
-}
-.textofacial {
-    margin-left: 10px;
-    margin-right: 1rem;
-}
-.manicure {
-    vertical-align:middle;
-    width: 350px;
-    height: 200px;
-    margin-left: 1rem;
-}
-.manicures {
-    display: flex;
-    margin-top: 1rem;
-}
-.textomanicure {
-    margin-left: 10px;
-    margin-right: 1rem;
 }
 .imagencontacto {
     margin-left: 1rem;
@@ -154,3 +119,67 @@
     width: 20vh;
   
 }
+.collage {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.contenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "imagenmasaje texto" 
+    "imagenfacial textofacial"
+    "imagenmanicure textomanicure";
+}
+.masaje1 {
+    grid-area:imagenmasaje ;
+    width: 60%;
+}
+.textomasaje{
+    grid-area:texto;
+    margin-left: -30%;
+    margin-right: 10%;
+}
+.facial1{
+    width: 60%;
+    grid-area: imagenfacial;
+}
+.textofacial {
+    grid-area: textofacial;
+    margin-left: -30%;
+    margin-right: 10%;
+}
+.manicure1 {
+    
+    width: 60%;
+    grid-area: imagenmanicure;
+}
+.textomanicure {
+    grid-area: textomanicure;
+    margin-left: -30%;
+    margin-right: 10%;
+}
+.mani {
+    margin-top: 3%;
+}
+.faci {
+    margin-top: -8.5%;
+}
+.hijo {
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width: 893px) { 
+    .contenedor {
+        grid-template-columns: 1fr  ;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "masaje1"
+        "textomasaje"
+        "imagenfacial"
+        "textofacial"
+        "imagenmanicure"
+        "textomanicure" ; }
+    }
