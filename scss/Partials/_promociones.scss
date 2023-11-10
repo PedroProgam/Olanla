@@ -1,0 +1,147 @@
+.promociones{
+    height:85%;
+    width:100%;
+    margin:0;
+    padding:0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &-top{
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        
+        height:100%;
+        width: 100%;
+        margin:0;
+        margin-bottom: 20px;
+        padding:0;
+
+        &-left{
+            width:50%;
+            height:100%;
+            margin:0;
+            padding:0;
+            
+            &-img{
+                width:100%;
+            }
+        }
+
+        &-right{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            width:40%;
+            height:100%;
+            text-align: center;
+        }
+    }
+
+    &-bottom{
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        
+        height:100%;
+        width: 100%;
+        margin:0;
+        margin-bottom: 20px;
+        padding:0;
+
+        &-left{
+            width:50%;
+            height:100%;
+            margin:0;
+            padding:0;
+            
+            &-img{
+                width:100%;
+            }
+        }
+
+        &-right{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            width:40%;
+            height:100%;
+            text-align: center;
+        }
+    }
+
+    
+}
+
+.precio{
+    font-weight: bold;
+    font-size: 2rem;
+}
+.slide-in-bck-center {
+	-webkit-animation: slide-in-bck-center 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-bck-center 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+ @-webkit-keyframes slide-in-bck-center {
+    0% {
+      -webkit-transform: translateZ(600px);
+              transform: translateZ(600px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-bck-center {
+    0% {
+      -webkit-transform: translateZ(600px);
+              transform: translateZ(600px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      opacity: 1;
+    }
+  }
+
+
+
+@media (max-width:720px) {
+    .promociones{
+        &-top{
+            flex-direction: column;
+            &-left{
+                width: 100%;
+                
+            }
+            &-right{
+                width: 100%;
+                margin-bottom: 10px;
+            }
+        }
+
+        &-bottom{
+            flex-direction: column;
+            &-left{
+                width: 100%;
+                
+            }
+            &-right{
+                width: 100%;
+                margin-bottom: 30px;
+            }
+        }
+    }
+}

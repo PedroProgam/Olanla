@@ -1,0 +1,132 @@
+.reserva{
+    width:100%;
+    height:100%;
+    display: flex;
+    flex-direction: row;
+    margin:0;
+    margin-bottom: 4%;
+    padding:0;
+    align-items: center;
+    justify-content: center;
+ 
+    &-left{
+        width:30%;    
+        height:100%;
+        margin:0;
+        padding:0;
+        
+
+        &-img{
+            width:100%;
+            height:100%;
+            margin:0;
+            padding:0;
+        }
+    }
+
+    &-right{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width:70%;    
+        height:100%;
+        margin:0;
+        padding:0;
+    }
+    .formulariocontacto {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+@media (max-width:720px) {
+    .reserva {
+        flex-direction: column;
+        &-left{
+            height:50%;
+            margin:0;
+            padding:0;
+            
+    
+            &-img{
+                width:100%;
+                height:100%;
+                margin:0;
+                padding:0;
+            }
+        }
+        
+        &-right{
+        display: flex;
+        flex-direction: column;
+        height:30%;
+        margin:0;
+        padding:0;
+        background-color: transparent;
+        }   
+
+        .formulariocontacto{
+            align-items: center;
+            justify-content: flex-start;
+            width:100%;
+            height:30%;
+            margin-bottom: 30%;
+        }
+    }
+
+    .submit{
+        width:50%;
+        margin-top:20px;
+    }
+}
+
+.submit{
+    width:50%;
+    margin-left:25%;
+    margin-top:20px;
+    
+    transform: translate(-50%, -50%);
+
+    a{
+        display: block;
+        width: 200px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 18px;
+        font-family: sans-serif;
+        text-decoration: none;
+        color: #333;
+        border: 2px solid #333;
+        letter-spacing: 2px;
+        text-align: center;
+        position: relative;
+        transition: all .35s;
+    }
+    
+    a span{
+        position: relative;
+        z-index: 2;
+    }
+    
+    a:after{
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background: #ff00ea;
+        transition: all .35s;
+    }
+    
+    a:hover{
+        color: #fff;
+    }
+    
+    a:hover:after{
+        width: 100%;
+    }
+  }
+  
