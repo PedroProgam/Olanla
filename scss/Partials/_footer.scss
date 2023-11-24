@@ -3,11 +3,11 @@
     display: flex;
     width:100%;
     margin:0;
-    position:fixed;
     bottom: 0;
     padding:0;
+    position: relative;
 
-    background-color: rgb(255, 255, 255);
+    background-color: #f4b6fa;
 
     &-content{
         display:flex;

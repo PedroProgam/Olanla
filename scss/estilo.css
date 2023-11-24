@@ -2,7 +2,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: rgb(248, 199, 252);
+  background-color: #f8c7fc;
   font-family: "young";
   height: 100%;
   width: 100%;
@@ -47,7 +47,6 @@ header {
   width: 50%;
   padding: 0;
   margin: 0;
-  background-color: red;
 }
 .contacto-imgContainer {
   display: flex;
@@ -55,7 +54,6 @@ header {
   width: 50%;
   padding: 0;
   margin: 0;
-  background-color: blue;
 }
 .contacto-imgContainer-left {
   width: 50%;
@@ -96,10 +94,10 @@ header {
   display: flex;
   width: 100%;
   margin: 0;
-  position: fixed;
   bottom: 0;
   padding: 0;
-  background-color: rgb(255, 255, 255);
+  position: relative;
+  background-color: #f4b6fa;
 }
 .footer-content {
   display: flex;
@@ -318,6 +316,7 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-right: 3%;
   width: 40%;
   height: 100%;
   text-align: center;
@@ -347,6 +346,7 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-right: 3%;
   width: 40%;
   height: 100%;
   text-align: center;
